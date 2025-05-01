@@ -1,103 +1,95 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+# 🚢 Batalha Naval - Projeto em C
 
-# Desafio Batalha Naval - Três Níveis de Complexidade
-
-Bem-vindo ao desafio "Batalha Naval"! Este projeto desafiará suas habilidades de programação utilizando vetores e matrizes para simular um jogo de Batalha Naval, dividido em três níveis: Novato, Aventureiro e Mestre. Em cada nível, novas funcionalidades serão adicionadas, tornando o desafio progressivamente mais complexo.
-
-## 🏅 Nível Novato
-
-Neste nível inicial, você implementará a lógica básica de posicionamento de navios em um tabuleiro de Batalha Naval utilizando vetores bidimensionais.
-
-### 🚩 Objetivos:
-- **Posicionamento dos Navios:** O sistema deve simular a localização de dois navios no tabuleiro, um posicionado verticalmente e outro horizontalmente.
-- **Utilização de Vetores:** Os navios serão posicionados utilizando vetores bidimensionais, com coordenadas X e Y.
-- **Exibição de Coordenadas:** O sistema deve exibir as coordenadas de cada parte dos navios no console utilizando `printf`.
-
-### 📥 Entrada de Dados:
-- Os valores serão inseridos manualmente por meio de variáveis no código.
-
-### 📤 Saída de Dados:
-- Após o posicionamento, o sistema deve exibir as coordenadas dos navios de forma clara e organizada.
+<div align="center">
+  <img src="https://img.shields.io/badge/Projeto%20em-C-blue.svg" alt="Projeto em C" />
+  <img src="https://img.shields.io/badge/Nível-Iniciante--Intermediário-yellow.svg" alt="Nível Iniciante" />
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange.svg" alt="Status Em Desenvolvimento" />
+</div>
 
 ---
 
-## 🏅 Nível Aventureiro
+## 📋 Sobre o Projeto
 
-No nível Aventureiro, você expandirá o tabuleiro e adicionará mais navios, incluindo posicionamentos na diagonal.
+O **Batalha Naval** é uma versão digital do clássico jogo de guerra naval, desenvolvida em linguagem **C**.  
+Foi criado como desafio prático para praticar lógica, matrizes, validações e entrada de dados com `scanf`.
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Tabuleiro 10x10:** O tabuleiro será expandido para uma matriz 10x10.
-- **Posicionamento de Quatro Navios:** O sistema deverá posicionar quatro navios, incluindo dois na diagonal.
-- **Exibição Completa do Tabuleiro:** O sistema exibirá toda a matriz, onde 0 indica uma posição sem navio e 3 indica uma posição ocupada.
-
-### 🚩 Novas Funcionalidades:
-- **Matriz 10x10:** Implementação de uma matriz maior para representar o tabuleiro.
-- **Posicionamento de Navios na Diagonal:** Adição de navios posicionados diagonalmente.
-- **Exibição do Tabuleiro Completo:** O sistema mostrará o tabuleiro completo, indicando as posições ocupadas e livres.
+O jogo é dividido em três níveis: **Novato**, **Aventureiro** e **Mestre**, cada um com novas complexidades e desafios.
 
 ---
 
-## 🏅 Nível Mestre
+## ✨ Funcionalidades
 
-No nível Mestre, o desafio se intensifica com a implementação de habilidades especiais representadas por matrizes específicas no tabuleiro.
+- 🧑‍✈️ **Nível Novato**:
+  - Interação via terminal: o jogador posiciona dois navios (um horizontal e um vertical) em um tabuleiro 5x5.
+  - Validação de coordenadas.
+  - Impressão do tabuleiro com os navios posicionados.
 
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Habilidades Especiais:** O sistema deve definir áreas de habilidades utilizando matrizes com padrões específicos: cone, cruz e octaedro.
-- **Estruturas de Repetição Aninhadas:** Utilização de loops aninhados para percorrer e preencher as áreas afetadas pelas habilidades.
+- 🌊 **Nível Aventureiro**:
+  - Tabuleiro 10x10 com navios já posicionados em padrões horizontais, verticais e diagonais.
+  - Impressão automática do campo de batalha.
 
-### 🚩 Novas Funcionalidades:
-- **Matrizes de Habilidades:** Implementação de três matrizes para representar habilidades especiais no tabuleiro.
-- **Padrões de Habilidade:** Criação de padrões específicos (cone, cruz, octaedro) para definir as áreas afetadas.
-- **Exibição das Áreas Atingidas:** O sistema exibirá o tabuleiro com as áreas afetadas, utilizando 0 para áreas não afetadas e 1 para áreas afetadas.
+- 🔮 **Nível Mestre**:
+  - Impressão de habilidades com padrões geométricos em matrizes: **Cone**, **Octaedro** e **Cruz**.
 
-### Exemplo de Saída:
-
-Exemplo e comando:
-printf("%d ",matriz[i][j]);
-
-### Exemplo de saída de habilidade em cone:
-
-0 0 1 0 0
-
-0 1 1 1 0
-
-1 1 1 1 1
-
-### Exemplo de saída de habilidade em octaedro:
-
-0 0 1 0 0
-
-0 1 1 1 0
-
-0 0 1 0 0
-
-### Exemplo de saída de habilidade em cruz:
-
-0 0 1 0 0
-
-1 1 1 1 1
-
-0 0 1 0 0
-
-
-
-
+- ⚙️ **Lógica e Validação**:
+  - Uso de loops `for`, condicionais `if` e entrada de dados com `scanf`.
+  - Impressão visual de matrizes com símbolos no terminal.
 
 ---
 
-## 📋 Requisitos Funcionais Comuns
-- **Entrada de Dados:** Os valores serão inseridos manualmente por meio de variáveis no código.
-- **Utilização de Matrizes:** Os dados devem ser estruturados de maneira eficiente utilizando matrizes.
-- **Exibição de Resultados:** Os resultados devem ser exibidos de forma clara e organizada.
+## 🎯 Desafios e Soluções
 
-## 📌 Requisitos Não Funcionais Comuns
-- **Performance:** O sistema deve executar operações de forma eficiente, sem atrasos perceptíveis.
-- **Documentação:** O código deve ser bem documentado, com comentários claros sobre a função de cada parte do código.
-- **Manutenibilidade:** O código deve ser organizado e fácil de entender, facilitando futuras manutenções e expansões.
+| Desafio | Objetivo | Solução |
+|:--------|:---------|:--------|
+| **1** | Criar tabuleiros para cada nível | Uso de matrizes com tamanhos diferentes |
+| **2** | Permitir interação do jogador | Validação de entradas e atualizações dinâmicas |
+| **3** | Exibir padrões geométricos em matrizes | Loops e preenchimento manual com `printf` |
 
 ---
 
-Boa sorte no desenvolvimento deste desafio! Aproveite para aprimorar suas habilidades em vetores e matrizes enquanto progride pelos níveis.
+## 🚀 Como Executar o Projeto
 
-Equipe de Ensino - MateCheck
+```bash
+# Clone o repositório
+git clone https://github.com/vmendesdev/desafio-batalha-naval-vmendesdev.git
+cd desafio-batalha-naval-vmendesdev
+
+# Compile a versão desejada
+gcc batalhaNaval_novato.c -o batalhaNaval_novato
+
+# Execute o programa
+./batalhaNaval_novato
+````
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Linguagem C
+- GCC (GNU Compiler Collection)
+- Visual Studio Code
+- Git e GitHub
+
+---
+
+## 👩‍💻 Autora
+
+Desenvolvido com 💻❤️ por **Vanessa Melo Mendes**.
+
+- GitHub: [@vmendesdev](https://github.com/vmendesdev)
+
+---
+
+> Este projeto faz parte do meu portfólio pessoal e demonstra habilidades práticas em lógica de programação, estruturas de decisão e desenvolvimento de aplicações em C.
+
+---
+
+## 📌 Observações
+
+- Projeto didático.
+- Código comentado para facilitar o entendimento.
+- Pode ser expandido com novas funcionalidades no futuro.
+
+---
+
+# 🏆 Obrigado por visitar meu projeto!
